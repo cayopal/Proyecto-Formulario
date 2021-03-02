@@ -1,0 +1,154 @@
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  6px  1fr 1fr auto 1fr 0.2fr;
+    gap: 10px;
+    grid-template-areas:
+    "window  window  window"
+    "header  header  header"
+    "nav     nav     nav"
+    "section   article  article"
+    "footer  footer  footer"
+    "footer1 footer1 footer1";
+    border: 2px solid black;
+}
+.window{
+    grid-area: window;
+}
+header{
+    grid-area: header;
+    display: inline-flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: blue;
+    color: white;
+}
+header h1{
+   margin: auto;
+}
+header figure{
+    display: inline-flex;  
+}
+header figure img{
+    height: 50px;
+    width: 50px;
+    clip-path: circle(50% at 50% 50%);
+    filter: opacity(60%);
+}
+nav{
+    grid-area: nav;
+    display: inline-flex;
+    background-color: blue;
+    color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 15px;
+}
+nav .buscar_web{
+    padding-top: 15px;
+    margin-left: auto; 
+}
+nav button{
+    height: 50px;
+    width: 50px;
+}
+nav button img{
+    height: 30px;
+    width: 40px;
+}
+
+section{
+    grid-area: section;
+    display: grid;
+    justify-items: center;
+    border: 2px solid black;
+    background-color: lightblue;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+section h1{
+   display: flex;
+   justify-content: center;
+}
+section button{
+    width: 180px;
+    height: 100px;
+    border-radius: 30px;
+    
+}   
+section button img{
+    height: 40px;
+    width: 40px;
+}
+
+article{
+    grid-area: article;
+    margin-right: 10px;
+    border: 2px solid black;
+    background-color: lightblue;
+}
+article fieldset{
+    margin-bottom: 40px;
+    margin: 20px 20px 20px 30px;
+    
+}
+article fieldset label{
+    display: inline-flex;
+    justify-content: right;
+    width: 25%;
+}
+article fieldset .radio{
+    display: inline-flex
+}
+article fieldset .textarea{
+   display: flex;
+   justify-items: center;
+   align-items: center;
+} 
+article .button{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    grid-area: footer;
+    background-color: cornflowerblue;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black; 
+}
+footer ul {
+    display: flex;
+}
+footer ul li{
+    flex: auto ;
+    list-style: none;
+    padding-top: 15px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black; 
+}
+footer ul li a:hover{
+    color:white;
+}
+.footer1{
+    grid-area: footer1;
+    padding-top: 10px;
+    border-top: 2px solid black;
+}
+@media only screen and (max-width: 550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 6px 1fr 1fr auto auto 1fr 0.2fr ;
+        grid-template-areas: "window"
+                            "header"
+                            "nav"
+                            "section"
+                            "article"
+                            "footer"
+                            "footer1";
+     }
+ }    
+ 
+                                    
