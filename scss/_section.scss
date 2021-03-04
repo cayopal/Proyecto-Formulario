@@ -6,14 +6,16 @@ section{
     background-color: $color-menuformulario;
     padding-bottom: 10px;
     margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
     h1{
         display: flex;
         justify-content: center;
+        padding: 20px 0;
     }
     button{
         width: 180px;
         height: 100px;
-        border-radius: 30px;
+        border-radius: 20px ;
         img{
             height: 40px;
             width: 40px;

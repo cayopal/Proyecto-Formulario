@@ -3,16 +3,17 @@ footer{
     background-color: cornflowerblue;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    color: black;
     ul {
         display: flex;
+        justify-content: space-evenly;
         li{
-            flex: auto ;
             list-style: none;
             padding-top: 15px;
             a{
                 text-decoration: none;
                 color: black; 
-                :hover{          
+                &:hover{          
                     color:white;
                 }
             }

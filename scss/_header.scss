@@ -1,6 +1,3 @@
-.window{
-    grid-area: window;
-}
 
 header{
     grid-area: header;
@@ -10,6 +7,7 @@ header{
     border-bottom: 2px solid black;
     background-color: blue;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     h1{
         margin: auto;
      }
@@ -26,4 +24,7 @@ header{
             margin: auto;
             }    
     }   
+}
+.window{
+    grid-area: window;
 }
