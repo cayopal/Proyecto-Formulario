@@ -1,0 +1,21 @@
+nav{
+    grid-area: nav;
+    display: inline-flex;
+    background-color: blue;
+    color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 15px;
+    .buscar_web{
+        padding-top: 15px;
+        margin-left: auto; 
+     }
+     button{
+        height: 50px;
+        width: 50px;
+        img{
+            height: 30px;
+            width: 40px;
+        }
+     }
+}

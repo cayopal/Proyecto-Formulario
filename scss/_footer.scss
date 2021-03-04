@@ -1,0 +1,27 @@
+footer{
+    grid-area: footer;
+    background-color: cornflowerblue;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    ul {
+        display: flex;
+        li{
+            flex: auto ;
+            list-style: none;
+            padding-top: 15px;
+            a{
+                text-decoration: none;
+                color: black; 
+                :hover{          
+                    color:white;
+                }
+            }
+        }
+    }
+}
+
+.footer1{
+    grid-area: footer1;
+    padding-top: 10px;
+    border-top: 2px solid black;
+}

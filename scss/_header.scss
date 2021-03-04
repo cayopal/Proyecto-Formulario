@@ -1,0 +1,29 @@
+.window{
+    grid-area: window;
+}
+
+header{
+    grid-area: header;
+    display: inline-flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: blue;
+    color: white;
+    h1{
+        margin: auto;
+     }
+     figure{
+        display: inline-flex;
+        img{
+            margin: auto;
+           height: 50px;
+           width: 50px;
+           clip-path: circle(50% at 50% 50%);
+           filter: opacity(60%);
+           }
+        figcaption{
+            margin: auto;
+            }    
+    }   
+}
