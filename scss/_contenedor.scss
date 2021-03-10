@@ -11,26 +11,37 @@
     "footer  footer  footer"
     "footer1 footer1 footer1";
     width: 65vw;
+    max-width: 1200px;
     border: 2px solid black;
     margin: auto;
+
 }
 
+@media screen and (max-width:768px){
+    .container{
+            width: 100%;
+        }
+}
 @media screen and (max-width:550px){
     .container{
-        grid-template-rows: repeat(7, auto);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  1fr 1fr auto auto 1fr;
         grid-template-areas:
-                    "window window window"
-                    "header  header header"
-                    "nav     nav  nav"
-                    "section section section"  
-                    "article  article article"
-                    "footer  footer footer"
-                    "footer1 footer1 footer1";
-        gap: 5px;
-        width: 100%;
-                }
+            "header"
+            "nav"
+            "article"
+            "section"
+            "footer";
+            width: 100%;
+    }
+    .window{
+        display:none;
+    }
+    .footer1{
+        display:none
+    }
         h1{
-            font-size: 23px;
-        }   
-     
- } 
+            font-size: large;
+        }
+    }
